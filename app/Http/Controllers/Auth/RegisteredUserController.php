@@ -38,6 +38,7 @@ class RegisteredUserController extends Controller
             'first_name' => $request->first_name,
             'last_name' => $request->last_name,
             'email' => $request->email,
+            'email_verified_at' => now(),
             'password' => Hash::make($request->password),
             'owner' => false,
             'account_id' => 1

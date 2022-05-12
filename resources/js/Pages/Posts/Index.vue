@@ -43,7 +43,7 @@
               </Link>
             </td>
             <td class="w-px border-t">
-              <Link class="flex items-center px-4" :href="`/organizations/${post.id}`" tabindex="-1">
+              <Link class="flex items-center px-4" :href="`/posts/${post.id}`" tabindex="-1">
                 <icon name="cheveron-right" class="block w-6 h-6 fill-gray-400" />
               </Link>
             </td>

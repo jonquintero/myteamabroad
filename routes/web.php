@@ -52,6 +52,9 @@ Route::get('dashboard', [DashboardController::class, 'index'])
     ->name('dashboard')
     ->middleware('auth');
 
+Route::get('posts/create', [PostController::class, 'create'])
+    ->name('posts.create')
+    ->middleware('auth');
 
 Route::get('posts', [PostController::class, 'index'])
     ->name('posts')
@@ -61,9 +64,6 @@ Route::get('posts/{post}', [PostController::class, 'show'])
     ->name('posts.show')
     ->middleware('auth');
 
-Route::get('posts/create', [PostController::class, 'create'])
-    ->name('posts.create')
-    ->middleware('auth');
 
 Route::post('posts', [PostController::class, 'store'])
     ->name('posts.store')
