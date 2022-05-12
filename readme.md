@@ -1,12 +1,5 @@
 ## Installation
 
-Clone the repo locally:
-
-```sh
-git clone https://github.com/inertiajs/pingcrm.git pingcrm
-cd pingcrm
-```
-
 Install PHP dependencies:
 
 ```sh
